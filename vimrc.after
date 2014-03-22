@@ -974,5 +974,6 @@ nnoremap <leader>n :NERDTreeToggle<CR>
 " ----------------------------------------------------------------------------
 
 filetype plugin indent on  " don't move/change this line
-"syntax on
+syntax on
 NeoBundleCheck             " check for new packages
+
