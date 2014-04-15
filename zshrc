@@ -37,7 +37,7 @@ ZSH=$HOME/.oh-my-zsh
 # much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-# Uncomment following line if you want to  shown in the command execution time stamp
+# Uncomment following line if you want to  shown in the command execution time stamp 
 # in the history command output. The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|
 # yyyy-mm-dd
 # HIST_STAMPS="mm/dd/yyyy"
@@ -51,9 +51,11 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+
 export PATH=$PATH:$HOME/bin:/usr/local/bin
 export PATH=$PATH:$HOME/.rvm/bin
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
@@ -68,13 +70,6 @@ export PATH=$PATH:$HOME/.rvm/bin
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
-#
-
-#Work file with confidential info
-if [ -f ~/.zshrc_work ]; then
-  source ~/.zshrc_work
-fi
-
 
 alias a='fasd -a'        # any
 alias s='fasd -si'       # show / search / select
