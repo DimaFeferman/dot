@@ -497,10 +497,6 @@ let g:instant_markdown_slow = 1
 
 nnoremap <leader>fjs :call JsBeautify()<cr>
 
-" MRU
-
-nmap <C-O> :MRU<cr>
-
 " NEOBUNDLE
 
 nmap <Leader>bi :NeoBundleInstall<CR>
@@ -519,7 +515,7 @@ let NERDTreeShowLineNumbers=1
 let NERDTreeChDirMode=2
 let NERDTreeShowBookmarks=1
 let NERDTreeIgnore=['\.git','\.hg']
-let NERDTreeBookmarksFile='/Users/dima/.vim/NERDTreeBookmarks'
+let NERDTreeBookmarksFile='~/.vim/NERDTreeBookmarks'
 
 nnoremap <C-e> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
@@ -548,9 +544,6 @@ let g:rbpt_colorpairs = [
 
 nmap <leader>rr :call :RunRuby<CR>
 
-" SILVER-SEARCHER
-
-map <leader>ag :Ag!<space><<C-R><C-W>\><CR>
 
 " SYNTASTIC
 
@@ -659,6 +652,9 @@ nnoremap <silent> [unite]s :<C-u>Unite -quick-match buffer<cr>
 nnoremap <silent> [unite]t :<C-u>Unite -auto-resize -buffer-name=tags tags tags/file<cr>
 nnoremap <silent> [unite]o :<C-u>Unite -auto-resize -buffer-name=outline outline<cr>
 nnoremap <silent> [unite]<space> :<C-u>Unite -toggle -auto-resize -buffer-name=mixed file_rec/async buffer file_mru bookmark<cr><c-u>
+
+" SILVER-SEARCHER
+nnoremap <leader>ag :Ag!<space><<C-R><C-W>\><CR>
 
 " UTILSNIPS
 
