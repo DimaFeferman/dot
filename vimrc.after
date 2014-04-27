@@ -71,19 +71,19 @@ NeoBundle     'Valloric/YouCompleteMe', { 'build': {'mac': 'install.sh', 'unix':
 NeoBundle     'kien/ctrlp.vim',         { 'depends': 'tacahiroy/ctrlp-funky' }
 NeoBundle     'xolox/vim-easytags',     { 'depends': 'xolox/vim-misc' }
 NeoBundle     'xolox/vim-session',      { 'depends': 'xolox/vim-misc' }
-NeoBundleLazy 'EasyGrep',               { 'autoload':{'commands':'GrepOptions'}}
-" NeoBundleLazy 'Shougo/vimshell.vim',    { 'autoload':{'commands':'VimShell'}}
-NeoBundleLazy 'majutsushi/tagbar',      { 'autoload':{'commands':'TagbarToggle'}}
-NeoBundleLazy 'mattn/gist-vim',         { 'autoload':{'commands':'Gist' }, 'depends': 'mattn/webapi-vim'}
-NeoBundleLazy 'mbbill/undotree',        { 'autoload':{'commands':'UndotreeToggle'}}
-NeoBundleLazy 'scrooloose/nerdtree',    { 'autoload':{'commands':['NERDTreeToggle','NERDTreeFind']}}
-NeoBundleLazy 'tpope/vim-endwise',      { 'autoload':{'filetypes':['lua','ruby','sh','zsh','vb','vbnet','aspvbs','vim','c','cpp','xdefaults']}}
+NeoBundle 'EasyGrep',               { 'autoload':{'commands':'GrepOptions'}}
+" NeoBundle 'Shougo/vimshell.vim',    { 'autoload':{'commands':'VimShell'}}
+NeoBundle 'majutsushi/tagbar',      { 'autoload':{'commands':'TagbarToggle'}}
+NeoBundle 'mattn/gist-vim',         { 'autoload':{'commands':'Gist' }, 'depends': 'mattn/webapi-vim'}
+NeoBundle 'mbbill/undotree',        { 'autoload':{'commands':'UndotreeToggle'}}
+NeoBundle 'scrooloose/nerdtree',    { 'autoload':{'commands':['NERDTreeToggle','NERDTreeFind']}}
+NeoBundle 'tpope/vim-endwise',      { 'autoload':{'filetypes':['lua','ruby','sh','zsh','vb','vbnet','aspvbs','vim','c','cpp','xdefaults']}}
 
 " UNITE
 
-NeoBundleLazy 'Shougo/unite-outline',      { 'autoload': { 'unite_sources':'outline'}}
-NeoBundleLazy 'Shougo/unite.vim',          { 'autoload': { 'commands':'Unite', 'insert': 1}}
-NeoBundleLazy 'ujihisa/unite-colorscheme', { 'autoload': { 'unite_sources':'colorscheme'}}
+NeoBundle 'Shougo/unite-outline',      { 'autoload': { 'unite_sources':'outline'}}
+NeoBundle 'Shougo/unite.vim',          { 'autoload': { 'commands':'Unite', 'insert': 1}}
+NeoBundle 'ujihisa/unite-colorscheme', { 'autoload': { 'unite_sources':'colorscheme'}}
 
 " LANGUAGE SUPPORT
 
