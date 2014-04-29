@@ -39,12 +39,15 @@ NeoBundle 'Shougo/vimproc', { 'build': {
       \   'unix': 'make -f make_unix.mak',
       \ }  }
 
+"NeoBundle     'SirVer/ultisnips'
+"NeoBundle     'kien/rainbow_parentheses.vim'
 NeoBundle     '907th/vim-auto-save'
 NeoBundle     'Lokaltog/vim-easymotion'
 NeoBundle     'Raimondi/delimitMate'
 NeoBundle     'Rename'
-"NeoBundle     'SirVer/ultisnips'
+NeoBundle     'godlygeek/tabular'
 NeoBundle     'Valloric/MatchTagAlways'
+NeoBundle     'honza/vim-snippets'
 NeoBundle     'ZoomWin'
 NeoBundle     'bling/vim-airline'
 NeoBundle     'bufkill.vim'
@@ -52,7 +55,6 @@ NeoBundle     'dahu/vim-fanfingtastic'
 NeoBundle     'epmatsw/ag.vim'
 NeoBundle     'gavinbeatty/dragvisuals.vim'
 NeoBundle     'godlygeek/tabular'
-"NeoBundle     'kien/rainbow_parentheses.vim'
 NeoBundle     'kshenoy/vim-signature'
 NeoBundle     'matthias-guenther/hammer.vim'
 NeoBundle     'michaeljsmith/vim-indent-object'
@@ -62,12 +64,12 @@ NeoBundle     'scrooloose/syntastic'
 NeoBundle     'skryl/tslime.vim'
 NeoBundle     'skryl/vimdoc'
 NeoBundle     'terryma/vim-expand-region'
-NeoBundle    'hallettj/jslint.vim'
 NeoBundle     'tomtom/tcomment_vim'
 NeoBundle     'tpope/vim-repeat'
 NeoBundle     'tpope/vim-surround'
 NeoBundle     'tpope/vim-unimpaired'
 NeoBundle     'vis'
+NeoBundle    'hallettj/jslint.vim'
 NeoBundle     'Valloric/YouCompleteMe', { 'build': {'mac': 'install.sh', 'unix': 'install.sh'}}
 NeoBundle     'kien/ctrlp.vim',         { 'depends': 'tacahiroy/ctrlp-funky' }
 NeoBundle     'xolox/vim-easytags',     { 'depends': 'xolox/vim-misc' }
