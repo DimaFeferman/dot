@@ -49,7 +49,7 @@ NeoBundle     'ZoomWin'
 NeoBundle     'bling/vim-airline'
 NeoBundle     'bufkill.vim'
 NeoBundle     'dahu/vim-fanfingtastic'
-NeoBundle     'epmatsw/ag.vim'
+NeoBundle     'rking/ag.vim'
 NeoBundle     'gavinbeatty/dragvisuals.vim'
 NeoBundle     'godlygeek/tabular'
 "NeoBundle     'kien/rainbow_parentheses.vim'
@@ -433,9 +433,9 @@ let g:ctrlp_cache_dir='~/.vim/.cache/ctrlp'
 let g:ctrlp_extensions=['funky']
 let g:ctrlp_map = '<nop>'
 
-nmap <silent> <Leader>ff :CtrlP<CR>
-nmap <silent> <Leader>fb :CtrlPBuffer<CR>
-nmap <silent> <Leader>fm :CtrlPMixed<CR>
+nnoremap <silent> <Leader>ff :CtrlP<CR>
+nnoremap <silent> <Leader>fb :CtrlPBuffer<CR>
+nnoremap <silent> <Leader>fm :CtrlPMixed<CR>
 " nnoremap [ctrlp]t :CtrlPBufTag<cr>
 " nnoremap [ctrlp]T :CtrlPTag<cr>
 " nnoremap [ctrlp]l :CtrlPLine<cr>
@@ -567,7 +567,6 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 " TABULAR
-
 nmap <Leader>a& :Tabularize /&<CR>
 vmap <Leader>a& :Tabularize /&<CR>
 nmap <Leader>a= :Tabularize /=<CR>
@@ -582,18 +581,15 @@ nmap <Leader>a<Bar> :Tabularize /<Bar><CR>
 vmap <Leader>a<Bar> :Tabularize /<Bar><CR>
 
 " TAGBAR
-
 nmap <C-T> :TagbarToggle<CR>
 map <C-\> :tnext<CR>
 let g:tagbar_left = 1
 
 " TCOMMENT
-
-nmap ,c<Space> <C-_><C-_>
-vmap ,c<Space> <C-_><C-_>
+nmap <leader>c <C-_><C-_>
+vmap <leader>c <C-_><C-_>
 
 " TSLIME
-
 let g:tmux_sessionname = 0
 let g:tmux_windowname = 1
 let g:tmux_panenumber = 2
@@ -806,9 +802,6 @@ let mapleader = ","
 let g:mapleader=","
 vnoremap . :norm.<cr>
 
-" remap semicolon to colon
-nnoremap ; :
-vnoremap ; :
 
 "" Keep search matches in the middle of the window.
 " zz centers the screen on the cursor, zv unfolds any fold if the cursor
@@ -973,3 +966,4 @@ filetype plugin indent on  " don't move/change this line
 syntax on
 NeoBundleCheck             " check for new packages
 
+set wrap
